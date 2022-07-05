@@ -55,7 +55,10 @@ Evaluation of your submission will be based on the following criteria.
 2. Install required dependencies
 ##### `$ npm install`
 
-3. Run the program in the browser
+3. Move inside the wave-challenge directory
+##### `$ cd wave-challenge`
+
+4. Run the program in the browser
 ##### `$ npm start`
 
 ## Implementation
