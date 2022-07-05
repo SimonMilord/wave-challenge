@@ -1,15 +1,5 @@
 # Wave Front-end Challenge
 
-The purpose of this exercise is to create something that we can work on together during the onsite interview. We do this so that you get a chance to
-collaborate with Wavers during the interview in a situation where you know something better than us (it's your code, after all!)
-
-There isn't a hard deadline for this exercise; take as long as you need to complete it. However, in terms of total time spent actively
-working on the challenge, we ask that you not spend more than a few hours, as we value your time and are happy to leave things open to
-discussion in the on-site interview.
-
-Please use whatever tools or frameworks you feel the most comfortable with.
-
-Feel free to email [dev.careers@waveapps.com](dev.careers@waveapps.com) if you have any questions.
 
 ## Project Description
 
@@ -55,3 +45,18 @@ Evaluation of your submission will be based on the following criteria.
 1. Did you document your build/run instructions and your explanation of what you are proud of?
 1. Is the code written such that it can easily be repurposed, reused and expanded upon?
 1. Were the various parts of the application and their roles easily identifiable to the reviewer?
+
+
+## Instructions / How do I run this thing?
+
+1. Clone Repository on your machine locally
+##### `$ git clone https://github.com/SimonMilord/wave-challenge.git`
+
+2. Install required dependencies
+##### `$ npm install`
+
+3. Run the program in the browser
+##### `$ npm start`
+
+## Implementation
+

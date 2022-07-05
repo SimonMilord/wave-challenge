@@ -229,7 +229,7 @@ class EditPage extends Component {
                 onChange={this.handleChannel}
                 required
               >
-                <option value="Website">Website</option>
+                <option defaultValue={this.state.channel} value="Website">Website</option>
                 <option value="Email">Email</option>
                 <option value="Phone">Phone</option>
                 <option value="Word-of-mouth">Word-of-mouth</option>
