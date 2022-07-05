@@ -1,8 +1,8 @@
-@import '../../styles/partials/mixins';
+@import "../../styles/partials/mixins";
 
 .customerList {
   margin-top: 5rem;
-  @include display-flex(column,center,center);
+  @include display-flex(column, center, center);
 
   &__header {
     width: 80%;
@@ -13,19 +13,19 @@
   }
   &__titles {
     width: 75%;
-    @include display-flex(row,flex-start,center);
+    @include display-flex(row, flex-start, center);
   }
   &__title {
     width: 25%;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    @include display-flex(row,flex-start,center);
+    @include display-flex(row, flex-start, center);
   }
 
   &__list {
     width: 80%;
-    @include display-flex(column,space-around,center);
+    @include display-flex(column, space-around, center);
   }
   &__item {
     width: 100%;

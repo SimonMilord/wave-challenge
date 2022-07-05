@@ -1,4 +1,4 @@
-@import '../../styles/partials/mixins';
+@import "../../styles/partials/mixins";
 
 .editPage {
   width: 100%;
@@ -8,7 +8,7 @@
 
   &__top {
     padding: 2rem;
-    @include display-flex(row,flex-end,center);
+    @include display-flex(row, flex-end, center);
   }
   &__back {
     font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +17,7 @@
 
     &:hover {
       cursor: pointer;
-      color:#136acd
+      color: #136acd;
     }
   }
 
@@ -28,7 +28,7 @@
   &__form {
     margin-top: 5rem;
     width: 100%;
-    @include display-flex(column,center,center);
+    @include display-flex(column, center, center);
   }
   &__core {
     margin-bottom: 2rem;
@@ -36,10 +36,9 @@
     border-radius: 12px;
     padding: 1rem;
     width: 45%;
-
   }
   &__field {
-    @include display-flex(row,space-between,center);
+    @include display-flex(row, space-between, center);
     padding: 1rem;
   }
   &__label {
@@ -47,13 +46,8 @@
   }
   &__input {
     width: 200px;
-
   }
 }
-
-
-
-
 
 .btn {
   border: none;
