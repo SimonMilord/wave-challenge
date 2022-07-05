@@ -9,10 +9,11 @@
     background-color: #136acd;
     color: #fff;
     padding: 1rem;
+    border-bottom: 1px solid black;
   }
   &__titles {
-    width: 100%;
-    @include display-flex(row,space-around,center);
+    width: 75%;
+    @include display-flex(row,flex-start,center);
   }
   &__title {
     width: 25%;
@@ -31,5 +32,9 @@
     padding: 1rem;
     list-style: none;
     background-color: #e9ecef;
+    border-bottom: 1px solid black;
+    &:hover {
+      background-color: lightgray;
+    }
   }
 }

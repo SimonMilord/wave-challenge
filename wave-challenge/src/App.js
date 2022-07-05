@@ -1,6 +1,8 @@
-import './App.scss';
-import './styles/partials/_reset.scss';
-import CustomerList from './components/CustomerList/customerList';
+import "./App.scss";
+import "./styles/partials/_reset.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MainPage from "./pages/MainPage/mainPage.jsx";
+import EditPage from "./pages/EditPage/editPage.jsx";
 import {useEffect, useState} from "react";
 import axios from "axios";
 
@@ -29,9 +31,14 @@ const getCustomers = () => {
 }
 
   return (
-    <div className="App">
-      <header className='title'>Wave Challenge</header>
-      <CustomerList customers={customersData}/>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact render={(routerProps) => <MainPage {...routerProps} data={customersData}/>} />
+          <Route path="/edit/:id" exact render={(routerProps) => <EditPage {...routerProps}/>} />
+          <Route path="*" exact render={(routerProps) => <MainPage {...routerProps} data={customersData}/>} />
+        </Switch>
+      </div>
+    </Router>
   );
 }

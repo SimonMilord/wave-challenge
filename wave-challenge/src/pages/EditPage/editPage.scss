@@ -1,0 +1,72 @@
+@import '../../styles/partials/mixins';
+
+.editPage {
+  width: 100%;
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &__top {
+    padding: 2rem;
+    @include display-flex(row,flex-end,center);
+  }
+  &__back {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: black;
+
+    &:hover {
+      cursor: pointer;
+      color:#136acd
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+  }
+  // FORM STYLING
+  &__form {
+    margin-top: 5rem;
+    width: 100%;
+    @include display-flex(column,center,center);
+  }
+  &__core {
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 45%;
+
+  }
+  &__field {
+    @include display-flex(row,space-between,center);
+    padding: 1rem;
+  }
+  &__label {
+    margin-right: 1rem;
+  }
+  &__input {
+    width: 200px;
+
+  }
+}
+
+
+
+
+
+.btn {
+  border: none;
+  background-color: #136acd;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0rem 1rem;
+  font-size: 16px;
+  border-radius: 20px;
+  height: 34px;
+  &:hover {
+    cursor: pointer;
+    background-color: blue;
+  }
+}

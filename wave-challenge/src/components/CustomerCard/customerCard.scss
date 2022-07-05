@@ -2,24 +2,43 @@
 
 .customerCard {
   width: 100%;
-  @include display-flex(row,space-around,center);
+  @include display-flex(row,space-between,center);
+
+  &__left {
+    width: 75%;
+    @include display-flex(row,flex-start,center);
+  }
+  &__right {
+    width: 25%;
+    @include display-flex(row,flex-end,center);
+
+  }
 
   &__info {
     width: 25%;
     @include display-flex(row,flex-start,center);
     font-family: Arial, Helvetica, sans-serif;
 
-    &--id {
+    // &--id {
+    //   width: 15%;
+    // }
+    // &--name {
+    //   width: 30%;
+    // }
+    // &--city {
+    //   width: 15%;
 
-    }
-    &--name {
+    // }
+    // &--email {
+    //   width: 30%;
+    // }
 
-    }
-    &--city {
+  }
+  &__editLink {
+    cursor: pointer;
+    width: 20%;
+  }
+  &__pen {
 
-    }
-    &--email {
-
-    }
   }
 }

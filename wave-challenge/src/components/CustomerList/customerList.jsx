@@ -6,21 +6,22 @@ export default function customerList(props) {
 
   return (
     <div className='customerList'>
-      <header className='customerList__header'>
+      <div className='customerList__header'>
         <ul className='customerList__titles'>
           <li className='customerList__title'>ID</li>
           <li className='customerList__title'>Name</li>
           <li className='customerList__title'>City</li>
           <li className='customerList__title'>Email</li>
         </ul>
-      </header>
+      </div>
       <ul className='customerList__list'>
         {/* here I am mapping each customer in the list */}
-        {props.customers.map((customer) => {
+        {props.customers.map((customer,index) => {
           return (
-            <li className='customerList__item' key={customer.id}>
+            <li className='customerList__item' key={index}>
               <CustomerCard
               {...customer}
+              index={index}
               />
             </li>
           )
