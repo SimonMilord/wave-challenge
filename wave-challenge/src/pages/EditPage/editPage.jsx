@@ -36,7 +36,7 @@ class EditPage extends Component {
           postal: customers.postal,
           city: customers.city,
           province: customers.province,
-          country: customers.country,
+          country: customers.country
         });
       })
       // Here i'm just console logging the error, we could change it to do something more specific
