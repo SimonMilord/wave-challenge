@@ -1,0 +1,12 @@
+@import './styles/partials/mixins';
+
+.App {
+  text-align: center;
+
+  .title {
+    margin: 2rem 0rem;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+

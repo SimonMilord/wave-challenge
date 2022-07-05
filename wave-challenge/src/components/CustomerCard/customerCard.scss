@@ -1,0 +1,25 @@
+@import '../../styles/partials/mixins';
+
+.customerCard {
+  width: 100%;
+  @include display-flex(row,space-around,center);
+
+  &__info {
+    width: 25%;
+    @include display-flex(row,flex-start,center);
+    font-family: Arial, Helvetica, sans-serif;
+
+    &--id {
+
+    }
+    &--name {
+
+    }
+    &--city {
+
+    }
+    &--email {
+
+    }
+  }
+}
